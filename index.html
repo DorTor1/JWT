@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JWT Auth Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      div {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      input {
+        display: block;
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 100%;
+      }
+      button {
+        padding: 8px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Пример JWT аутентификации</h1>
+
+    <div>
+      <h2>Регистрация</h2>
+      <form id="registerForm">
+        <input type="text" id="registerUsername" placeholder="Имя пользователя" required>
+        <input type="password" id="registerPassword" placeholder="Пароль" required>
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+      <p id="registerMessage"></p>
+    </div>
+
+    <div>
+      <h2>Вход</h2>
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Имя пользователя" required>
+        <input type="password" id="loginPassword" placeholder="Пароль" required>
+        <button type="submit">Войти</button>
+      </form>
+      <p id="loginMessage"></p>
+    </div>
+
+    <div>
+      <h2>Защищенные данные</h2>
+      <button id="fetchProtectedData">Получить защищенные данные</button>
+      <p id="protectedData"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
