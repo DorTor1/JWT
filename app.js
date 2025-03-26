@@ -83,4 +83,4 @@ document.getElementById('fetchProtectedData').addEventListener('click', async ()
         document.getElementById('protectedData').textContent = 'Ошибка соединения с сервером';
         document.getElementById('protectedData').style.color = 'red';
     }
-}); 
+});  
